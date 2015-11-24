@@ -23,7 +23,7 @@ public class TestManager {
 	private String baseUrl = "https://www.google.com.ua/";
 	protected static UserData userData = new UserData(Locators.USER_NAME.getValue(), Locators.PASSWORD.getValue());
 	private static final WebDriverEventListener eventListener = new LoggingEventListener();
-	//protected static EmailData emailData = new EmailData( getEmail(), generateRandomBody() );
+	//protected static EmailData emailData = new EmailData( getEmail(),  generateRandomBody() );
 	protected MainPage mainPage;
 	
 	@Before
