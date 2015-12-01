@@ -4,7 +4,7 @@ package util;
  * Created by User on 24.11.2015.
  */
 
-//import conf.report.Logger;
+import conf.report.Logger;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
