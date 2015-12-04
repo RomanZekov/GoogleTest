@@ -19,7 +19,6 @@ public class Login  extends TestManager{
 	  		   enterPassword( getPass() ).
 	  		   checkRememberMe().
 	  		   clickSignIn();
-	  //assertTrue("Incorrect page is displayed.", mainPage.isPresent());
 	  assertTrue("Incorrect page is displayed.", mainPage.isLoggedIn());
   }
   

@@ -4,6 +4,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import data.Locators;
 import elements.Button;
 import elements.Checkbox;
 import elements.TextInput;
@@ -11,27 +12,14 @@ import static conf.TestManager.waitInSeconds;
 
 public class PasswordPage {
 	
-	private TextInput passwordInput = new TextInput(By.id("Passwd"));
-	private Button signInButton = new Button(By.id("signIn"));
-	private Checkbox rememberMeCheckbox = new Checkbox(By.id("PersistentCookie"));
+	private TextInput passwordInput = new TextInput(By.id( Locators.PASSWD_INPUT.getValue() ));
+	private Button signInButton = new Button(By.id( Locators.SIGN_IN_BUTTON.getValue() ));
+	private Checkbox rememberMeCheckbox = new Checkbox(By.id( Locators.PERSISTENT_COOKIE.getValue() ));
 	
 	
 	public PasswordPage enterPassword (String password) {
 		
-		for (int i = 0; i < 10; i++) {
-			
-			if (passwordInput.isPresent()) {
-				
-				break;
-				
-			} else {
-				
-				waitInSeconds(2);
-				
-			}
-			
-		}
-
+		passwordInput.waitForElement();
 		passwordInput.type(password);
 		return this;
 	

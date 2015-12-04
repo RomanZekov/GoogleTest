@@ -14,13 +14,6 @@ import static org.junit.Assert.assertTrue;
 public class Email extends TestManager {
     InboxPage inbox;
 
-//    @Before
-//    public void setUp() {
-//        driver = new FirefoxDriver();
-//        getDriver().get(emailBaseUrl);
-//        inbox = new InboxPage();
-//    }
-
     @Test
     public void firstEmail(){
         InboxPage inbox = mainPage.login().getInboxPage();
@@ -34,7 +27,6 @@ public class Email extends TestManager {
         InboxPage inbox = mainPage.login().getInboxPage();
         inbox.sendEmail( getEmail() ).deleteEmail( inbox.getEmailData().getBody());
         waitInSeconds(5);
-        //assertTrue("You are logged in. ", inbox.isInboxOpened());
         assertFalse("Email is not present. ", inbox.isEmailPresent( inbox.getEmailData().getBody() ));
     }
     

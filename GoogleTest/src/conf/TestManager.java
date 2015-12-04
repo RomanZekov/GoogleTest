@@ -2,8 +2,6 @@ package conf;
 
 import java.util.Random;
 
-import javax.sql.rowset.WebRowSet;
-
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +21,6 @@ public class TestManager {
 	private String baseUrl = "https://www.google.com.ua/";
 	protected static UserData userData = new UserData(Locators.USER_NAME.getValue(), Locators.PASSWORD.getValue());
 	private static final WebDriverEventListener eventListener = new LoggingEventListener();
-	//protected static EmailData emailData = new EmailData( getEmail(),  generateRandomBody() );
 	protected MainPage mainPage;
 	
 	@Before
@@ -85,26 +82,6 @@ public class TestManager {
 		return userData;
 		
 	}
-	
-	/*
-	public static String getEmailBody(){
-		
-		return emailData.getBody();
-		
-	}
-	
-	public static String getEmailSubject(){
-		
-		return emailData.getSubject();
-		
-	}
-	
-	public static String getEmailReceiversInStr(){
-		
-		return emailData.getReceiversInString();
-		
-	}
-	*/
 	
 	public static String generateRandomBody () {
 		
