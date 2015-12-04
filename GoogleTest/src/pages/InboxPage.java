@@ -12,9 +12,7 @@ import static conf.TestManager.getDriver;
 import static conf.TestManager.waitInSeconds;
 import static conf.TestManager.generateRandomBody;
 import static conf.TestManager.getEmail;
-//import static conf.TestManager.getEmailSubject;
-//import static conf.TestManager.getEmailBody;
-//import static conf.TestManager.getEmailReceiversInStr;
+
 
 /**
  * Created by User on 13.11.2015.
