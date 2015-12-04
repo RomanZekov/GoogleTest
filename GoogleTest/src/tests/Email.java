@@ -16,14 +16,14 @@ import org.testng.Assert;
  */
 public class Email extends TestManager {
     InboxPage inbox;
-
+/*
     @Test
     public void firstEmail(){
         InboxPage inbox = mainPage.login().getInboxPage();
         inbox.sendEmail( getEmail() );
         Assert.assertTrue(inbox.isBodyPresent( inbox.getEmailData().getBody() ));
     }
-  
+ */ 
    
     @Test
     public void useAppMenu(){

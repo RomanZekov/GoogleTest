@@ -28,6 +28,7 @@ public class TestManager {
 		driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
 		getDriver().get(baseUrl);
 		mainPage = new MainPage();
+		driver.manage().window().maximize();
 	}
 	
 	@AfterMethod

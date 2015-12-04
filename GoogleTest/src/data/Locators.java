@@ -18,10 +18,10 @@ public enum Locators {
 	SEND_EMAIL("//div[@class='T-I J-J5-Ji aoO T-I-atl L3']"),
 	EMAIL("//span[@email='zekov.roman78@gmail.com']"),
 	BODY("//span[@class='y2']"),
-	RECEIVER_INPUT("//textarea[@aria-label='РљРѕРјСѓ']"),
+	RECEIVER_INPUT("//textarea[@aria-label='Кому']"),
 	SUBJECT_INPUT("aoT"),
-	BODY_INPUT("//div[@aria-label='РўРµР»Рѕ РїРёСЃСЊРјР°']"),
-	DELETE_EMAIL_BUTTON(".//div[@aria-label='РЈРґР°Р»РёС‚СЊ']/div"),
+	BODY_INPUT("//div[@aria-label='Тело письма']"),
+	DELETE_EMAIL_BUTTON("//div[@aria-label='Удалить']/div"),
 /*-------------------------------------------------------------------*/	
 	GOOGLE_SIGN_IN("gb_70"),
 	GMAIL_LINK(".//*[@id='gb23']/span[1]"),

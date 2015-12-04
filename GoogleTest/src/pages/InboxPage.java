@@ -54,7 +54,7 @@ public class InboxPage {
     public InboxPage deleteEmail(String body) {
 
     	findCheckBoxByEmailBodyAndCheck( emailData.getBody() );
-    	
+    	waitInSeconds(4);
     	delEmailButton.waitForElement();
    		delEmailButton.click();
     		
