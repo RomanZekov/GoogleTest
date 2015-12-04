@@ -26,7 +26,6 @@ public class TestManager {
 	@Before
 	public void setUp() {
 		driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
-		//driver = new FirefoxDriver();
 		getDriver().get(baseUrl);
 		mainPage = new MainPage();
 	}

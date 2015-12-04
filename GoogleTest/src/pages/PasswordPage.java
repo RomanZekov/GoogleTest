@@ -3,12 +3,10 @@ package pages;
 //import static conf.TestManager.getDriver;
 
 import org.openqa.selenium.By;
-
 import data.Locators;
 import elements.Button;
 import elements.Checkbox;
 import elements.TextInput;
-import static conf.TestManager.waitInSeconds;
 
 public class PasswordPage {
 	
