@@ -1,0 +1,10 @@
+<suite name="TestLogin" verbose="10">
+    <test name="Test login procedure" preserve-order="true">
+    <classes>
+      <class name="tests.Login">
+      </class>
+      <class name="tests.Email">
+      </class>
+    </classes>
+  </test>
+</suite>
