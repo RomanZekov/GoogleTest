@@ -21,8 +21,7 @@ public enum Locators {
 	RECEIVER_INPUT("//textarea[@aria-label='Кому']"),
 	SUBJECT_INPUT("aoT"),
 	BODY_INPUT("//div[@aria-label='Тело письма']"),
-	//CHECKBOX_DELETE("//span[contains(text(),'Body 4')]/../../../../..//div[@role='checkbox']"),
-	DELETE_EMAIL_BUTTON(".//div[@aria-label='Удалить']"),
+	DELETE_EMAIL_BUTTON(".//div[@aria-label='Удалить']/div"),
 /*-------------------------------------------------------------------*/	
 	GOOGLE_SIGN_IN("gb_70"),
 	GMAIL_LINK(".//*[@id='gb23']/span[1]"),
