@@ -1,11 +1,14 @@
 package tests;
 
 import conf.TestManager;
-import org.junit.Test;
+//import org.junit.Test;
 import pages.InboxPage;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+
+//import static org.junit.Assert.assertFalse;
+//import static org.junit.Assert.assertTrue;
 
 
 /**
@@ -18,7 +21,7 @@ public class Email extends TestManager {
     public void firstEmail(){
         InboxPage inbox = mainPage.login().getInboxPage();
         inbox.sendEmail( getEmail() );
-        assertTrue(inbox.isBodyPresent( inbox.getEmailData().getBody() ));
+        Assert.assertTrue(inbox.isBodyPresent( inbox.getEmailData().getBody() ));
     }
   
    
@@ -27,7 +30,7 @@ public class Email extends TestManager {
         InboxPage inbox = mainPage.login().getInboxPage();
         inbox.sendEmail( getEmail() ).deleteEmail( inbox.getEmailData().getBody());
         waitInSeconds(5);
-        assertFalse("Email is not present. ", inbox.isEmailPresent( inbox.getEmailData().getBody() ));
+        Assert.assertFalse( inbox.isEmailPresent( inbox.getEmailData().getBody() ), "Email is not present. " );
     }
     
 }
