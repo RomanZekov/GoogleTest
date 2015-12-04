@@ -2,12 +2,12 @@ package conf;
 
 import java.util.Random;
 
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import conf.report.LoggingEventListener;
 import data.Locators;
@@ -23,14 +23,14 @@ public class TestManager {
 	private static final WebDriverEventListener eventListener = new LoggingEventListener();
 	protected MainPage mainPage;
 	
-	@Before
+	@BeforeMethod
 	public void setUp() {
 		driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
 		getDriver().get(baseUrl);
 		mainPage = new MainPage();
 	}
 	
-	@After
+	@AfterMethod
 	public void tearDown() {
 		
 		driver.quit();

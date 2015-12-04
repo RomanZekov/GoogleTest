@@ -2,9 +2,11 @@ package tests;
 
 import conf.TestManager;
 
-import static org.junit.Assert.*;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+//import static org.junit.Assert.*;
 
-import org.junit.*;
+//import org.junit.*;
 
 
 public class Login  extends TestManager{
@@ -19,7 +21,7 @@ public class Login  extends TestManager{
 	  		   enterPassword( getPass() ).
 	  		   checkRememberMe().
 	  		   clickSignIn();
-	  assertTrue("Incorrect page is displayed.", mainPage.isLoggedIn());
+	  Assert.assertTrue( mainPage.isLoggedIn(), "Incorrect page is displayed." );
   }
   
   
