@@ -3,6 +3,8 @@ package pages;
 import elements.Button;
 import elements.Checkbox;
 import elements.TextInput;
+import elements.TextLabel;
+
 import org.openqa.selenium.By;
 
 import data.EmailData;
@@ -23,7 +25,6 @@ public class InboxPage {
 
 	private Button composeButton = new Button(By.className( Locators.COMPOSE_NEW_MAIL.getValue()) );
     private Button sendButton = new Button(By.xpath( Locators.SEND_EMAIL.getValue()) );
-    //private Button email = new Button( By.xpath( Locators.EMAIL.getValue()) );
     private Button body = new Button(By.xpath( Locators.BODY.getValue() ));
     private Button delEmailButton = new Button(By.xpath( Locators.DELETE_EMAIL_BUTTON.getValue() ));
 
@@ -31,6 +32,8 @@ public class InboxPage {
     private TextInput subjectInput = new TextInput(By.className( Locators.SUBJECT_INPUT.getValue() ));
     private TextInput bodyInput = new TextInput(By.xpath( Locators.BODY_INPUT.getValue() ));
     private Checkbox checkToDelete;
+    
+    private TextLabel emptyLabel = new TextLabel(By.xpath("//div[text()='Вкладка \"Основні\" порожня.']"));
     
     
 
@@ -62,12 +65,6 @@ public class InboxPage {
 
         return this;
     } 
-/*
-    public boolean isEmailPresent(String body) {
-        email.waitForElement();
-        return email.isPresent();
-    }
-*/
     
     public boolean isEmailPresent(String body) {
         String locator;
