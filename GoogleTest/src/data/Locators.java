@@ -25,7 +25,7 @@ public enum Locators {
 	DELETE_EMAIL_BUTTON("//div[@data-tooltip='Удалить']"),
 /*-------------------------------------------------------------------*/	
 	GOOGLE_SIGN_IN("gb_70"),
-	GMAIL_LINK(".//*[@id='gb23']/span[1]"),
+	GMAIL_LINK("//a[@id='gb23']"), //   .//*[@id='gb23']/span[1]
 	GOOGLE_APPS_MENU(".//*[@id='gbwa']/div[1]/a"),
 	NAME_LABEL(".gb_P.gb_R"),
 	CONFIRMATION_BUTTON("//a[@title='No thanks']"),

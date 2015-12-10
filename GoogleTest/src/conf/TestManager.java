@@ -4,10 +4,13 @@ import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+//import com.gargoylesoftware.htmlunit.BrowserVersion;
 
 import conf.report.LoggingEventListener;
 import data.Locators;
@@ -26,6 +29,7 @@ public class TestManager {
 	@BeforeMethod
 	public void setUp() {
 		driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
+		//driver = new EventFiringWebDriver (new HtmlUnitDriver(BrowserVersion.FIREFOX_38)).register(eventListener);
 		getDriver().get(baseUrl);
 		mainPage = new MainPage();
 		driver.manage().window().maximize();

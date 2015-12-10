@@ -4,10 +4,6 @@ import conf.TestManager;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
-//import static org.junit.Assert.*;
-
-//import org.junit.*;
-
 
 public class Login  extends TestManager{
 
