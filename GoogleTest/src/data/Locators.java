@@ -5,6 +5,8 @@ public enum Locators {
 	USER_NAME("zekov.roman78"),
 	PASSWORD("Nthvbyfnjh"),
 	/*-------------------------------------------------------------------*/
+	LOGIN_INPUT("Email"),
+	LOGIN_NEXT_BUTTON("next"),
 	PASSWD_INPUT("Passwd"),
 	SIGN_IN_BUTTON("signIn"),
 	PERSISTENT_COOKIE("PersistentCookie"),
@@ -18,20 +20,19 @@ public enum Locators {
 	SEND_EMAIL("//div[@class='T-I J-J5-Ji aoO T-I-atl L3']"),
 	EMAIL("//span[@email='zekov.roman78@gmail.com']"),
 	BODY("//span[@class='y2']"),
-	RECEIVER_INPUT("//textarea[@aria-label='Кому']"),
+	RECEIVER_INPUT("//textarea[@aria-label='РљРѕРјСѓ']"), //Komu
 	SUBJECT_INPUT("aoT"),
-	BODY_INPUT("//div[@aria-label='Тело письма']"),
-	//DELETE_EMAIL_BUTTON("//div[@aria-label='Удалить']/div"),
-	DELETE_EMAIL_BUTTON("//div[@data-tooltip='Удалить']"),
+	BODY_INPUT("//div[@aria-label='РўРµР»Рѕ РїРёСЃСЊРјР°']"), //Telo pisma
+	//DELETE_EMAIL_BUTTON("//div[@aria-label='пїЅпїЅпїЅпїЅпїЅпїЅпїЅ']/div"),
+	DELETE_EMAIL_BUTTON("//div[@data-tooltip='РЈРґР°Р»РёС‚СЊ']"), //Udalit
 /*-------------------------------------------------------------------*/	
 	GOOGLE_SIGN_IN("gb_70"),
 	GMAIL_LINK(".//*[@id='gb23']/span[1]"),
 	GOOGLE_APPS_MENU(".//*[@id='gbwa']/div[1]/a"),
 	NAME_LABEL(".gb_P.gb_R"),
-	CONFIRMATION_BUTTON("//a[@title='No thanks']"),
+	CONFIRMATION_BUTTON("//a[@title='No thanks']");
 /*-------------------------------------------------------------------*/
-	LOGIN_INPUT("Email"),
-	LOGIN_NEXT_BUTTON("next");
+	
 	
 	
 	private final String value;

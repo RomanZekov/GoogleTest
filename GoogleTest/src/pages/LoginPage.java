@@ -10,7 +10,8 @@ import elements.TextInput;
 
 public class LoginPage {
 	
-	private Button nextButton = new Button(By.id( Locators.LOGIN_NEXT_BUTTON.getValue() ));
+	//private Button nextButton = new Button(By.id( Locators.LOGIN_NEXT_BUTTON.getValue() ));
+	private Button nextButton = new Button(By.xpath( "//input[@id='next']" ));
 	private TextInput loginInput = new TextInput(By.id( Locators.LOGIN_INPUT.getValue() ));
 
 	public LoginPage enterLogin (String login) {

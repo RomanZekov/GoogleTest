@@ -4,18 +4,21 @@ import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
+import conf.report.CaptureScreenShotOnFailureListener;
 import conf.report.LoggingEventListener;
 import data.Locators;
 import data.UserData;
 import pages.MainPage;
 
 
-
+//@Listeners(CaptureScreenShotOnFailureListener.class)
 public class TestManager {
 	protected static WebDriver driver;
 	private String baseUrl = "https://www.google.com.ua/";
@@ -25,10 +28,12 @@ public class TestManager {
 	
 	@BeforeMethod
 	public void setUp() {
-		driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
-		getDriver().get(baseUrl);
+		//driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
+		driver = new HtmlUnitDriver();
+		//getDriver().get(baseUrl);
+		driver.get(baseUrl);
 		mainPage = new MainPage();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 	}
 	
 	@AfterMethod
