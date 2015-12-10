@@ -12,10 +12,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 import conf.report.CaptureScreenShotOnFailureListener;
-//import com.gargoylesoftware.htmlunit.BrowserVersion;
-
-//import com.gargoylesoftware.htmlunit.BrowserVersion;
-
 import conf.report.LoggingEventListener;
 import data.Locators;
 import data.UserData;
