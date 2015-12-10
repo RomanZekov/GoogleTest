@@ -1,7 +1,6 @@
 package tests;
 
 import conf.TestManager;
-
 import org.testng.annotations.Test;
 import org.testng.Assert;
 

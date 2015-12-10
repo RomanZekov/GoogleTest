@@ -1,23 +1,18 @@
 package conf;
 
-import java.util.Random;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-
-//import com.gargoylesoftware.htmlunit.BrowserVersion;
-
-import conf.report.LoggingEventListener;
 import data.Locators;
 import data.UserData;
 import pages.MainPage;
-
-
+import java.util.Random;
+import org.openqa.selenium.WebDriver;
+import conf.report.LoggingEventListener;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+//import com.gargoylesoftware.htmlunit.BrowserVersion;
 
 public class TestManager {
 	protected static WebDriver driver;
@@ -59,8 +54,6 @@ public class TestManager {
 			e.printStackTrace();
 			
 		}
-		
-	
 	}
 	
 	public static String getUserName(){
