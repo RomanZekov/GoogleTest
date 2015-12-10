@@ -4,7 +4,7 @@ import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.AfterMethod;
@@ -12,6 +12,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 import conf.report.CaptureScreenShotOnFailureListener;
+//import com.gargoylesoftware.htmlunit.BrowserVersion;
+
+//import com.gargoylesoftware.htmlunit.BrowserVersion;
+
 import conf.report.LoggingEventListener;
 import data.Locators;
 import data.UserData;
@@ -28,12 +32,11 @@ public class TestManager {
 	
 	@BeforeMethod
 	public void setUp() {
-		//driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
-		driver = new HtmlUnitDriver();
-		//getDriver().get(baseUrl);
-		driver.get(baseUrl);
+		driver = new EventFiringWebDriver(new FirefoxDriver()).register(eventListener);
+		//driver = new EventFiringWebDriver (new HtmlUnitDriver(BrowserVersion.FIREFOX_38)).register(eventListener);
+		getDriver().get(baseUrl);
 		mainPage = new MainPage();
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 	
 	@AfterMethod
