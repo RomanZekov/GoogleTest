@@ -15,8 +15,14 @@ public class DrivePage {
         myDrive.click();
         upload.waitForElement();
         upload.click();
+        
         return this;
     }
 
+    public void loadOneFileWithAutoIT(){
+    	
+    	Runtime.getRuntime().exec("D:\AutoIt\AutoItTest.exe");
+    	
+    }
 
 }
