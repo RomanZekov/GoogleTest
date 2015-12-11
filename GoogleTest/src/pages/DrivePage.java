@@ -1,6 +1,11 @@
 package pages;
 
 import elements.Button;
+
+import java.io.File;
+import java.io.IOException;
+import static conf.TestManager.waitInSeconds;
+
 import org.openqa.selenium.By;
 
 /**
@@ -13,15 +18,30 @@ public class DrivePage {
     public DrivePage openUpload(){
         myDrive.waitForElement();
         myDrive.click();
+        waitInSeconds(5);
         upload.waitForElement();
-        upload.click();
         
+        upload.click();
+        waitInSeconds(5);
+        loadOneFileWithAutoIT();
+        waitInSeconds(10);
         return this;
     }
 
-    public void loadOneFileWithAutoIT(){
+    public void loadOneFileWithAutoIT() {
     	
-    	Runtime.getRuntime().exec("D:\AutoIt\AutoItTest.exe");
+    	File file = new File("");
+    	String path = file.getAbsolutePath();
+    	String filesFolder = path + "\\src\\main\\resources\\autoitscript\\";
+    	String fileName = filesFolder + "upload_file_using_open_window.exe";
+    	final String[] stringArgs = {fileName};
+    	//"E:/Java/GitRepository/GoogleTest/GoogleTest/src/main/resources/autoitscript/upload_file_using_open_window.exe"
+    	try {
+    		Runtime.getRuntime().exec(stringArgs);
+    	} catch (IOException e) {
+    		//"Something went wrong"
+    		e.printStackTrace();
+    	}
     	
     }
 
