@@ -1,5 +1,7 @@
 package elements;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -8,6 +10,8 @@ import static conf.TestManager.waitInSeconds;
 
 
 public abstract class Element {
+	
+	protected Log log = LogFactory.getLog(this.getClass());
 	
 	protected By by;
 	

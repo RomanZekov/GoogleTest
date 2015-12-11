@@ -12,14 +12,17 @@ import org.openqa.selenium.By;
  * Created by User on 04.12.2015.
  */
 public class DrivePage {
-    private Button myDrive = new Button(By.xpath("//div[text()='РњРѕР№ РґРёСЃРє']"));
-    private Button upload = new Button(By.xpath("//div[contains(text(), 'Р—Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р»С‹')]/../../.."));
+    private Button myDrive = new Button(By.xpath("//div[text()='Мой диск']"));
+    private Button upload = new Button(By.xpath("//div[contains(text(), 'Загрузить файлы')]/../../.."));
 
     public DrivePage openUpload(){
         myDrive.waitForElement();
         myDrive.click();
+        waitInSeconds(5);
         upload.waitForElement();
+        
         upload.click();
+        waitInSeconds(5);
         loadOneFileWithAutoIT();
         waitInSeconds(10);
         return this;
@@ -32,7 +35,7 @@ public class DrivePage {
     	String filesFolder = path + "\\src\\main\\resources\\autoitscript\\";
     	String fileName = filesFolder + "upload_file_using_open_window.exe";
     	final String[] stringArgs = {fileName};
-    	
+    	//"E:/Java/GitRepository/GoogleTest/GoogleTest/src/main/resources/autoitscript/upload_file_using_open_window.exe"
     	try {
     		Runtime.getRuntime().exec(stringArgs);
     	} catch (IOException e) {
