@@ -11,7 +11,7 @@ public class Button extends Element {
 	}
 	
 	public void click() {
-		
+		waitForElementToBeClickable();
 		composeWebElement().click();
 		
 	}

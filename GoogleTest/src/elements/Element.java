@@ -4,7 +4,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import static conf.TestManager.getDriver;
 import static conf.TestManager.waitInSeconds;
 
@@ -30,7 +34,7 @@ public abstract class Element {
 
 	public String getText() {
 		
-		return getDriver().findElement(by).getText();
+		return composeWebElement().getText();
 		
 	}
 	
@@ -38,7 +42,7 @@ public abstract class Element {
 		
 		try {
 			
-			composeWebElement();
+			composeWebElement().isDisplayed();
 			return true;
 			
 		} catch (NoSuchElementException e ) {
@@ -47,6 +51,16 @@ public abstract class Element {
 		}
 		
 	}
+	
+    public void waitForElementToBeVisible(int secToWait) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), secToWait);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
+    
+    public void waitForElementToBeClickable() {
+        WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+        wait.ignoring(WebDriverException.class).until(ExpectedConditions.elementToBeClickable(by));
+    }
 	
 	public void waitForElement() {
 		
