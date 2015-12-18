@@ -1,0 +1,54 @@
+2015-12-15 17:39:32,586 INFO  - Navigating to:'https://www.google.com.ua/'
+2015-12-15 17:39:34,443 INFO  - Clicking on By.id: gb_70
+2015-12-15 17:39:35,287 INFO  - - - Ok! Element, found By.id: gb_70 clicked successfully
+2015-12-15 17:39:35,341 INFO  - Changing value in element found By.id: Email from '' to ''
+2015-12-15 17:39:35,488 INFO  - Changing value in element found By.id: Email from '' to 'zekov.roman78'
+2015-12-15 17:39:35,498 INFO  - Clicking on By.id: next
+2015-12-15 17:39:35,564 INFO  - - - Ok! Element, found By.id: next clicked successfully
+2015-12-15 17:39:35,590 ERROR - WebDriver error: Element not found By.id: Passwd
+2015-12-15 17:39:37,720 INFO  - Changing value in element found By.id: Passwd from '' to ''
+2015-12-15 17:39:37,862 INFO  - Changing value in element found By.id: Passwd from '' to 'Nthvbyfnjh'
+2015-12-15 17:39:37,917 INFO  - Clicking on By.id: signIn
+2015-12-15 17:39:38,779 INFO  - - - Ok! Element, found By.id: signIn clicked successfully
+2015-12-15 17:41:27,954 INFO  - Navigating to:'https://www.google.com.ua/'
+2015-12-15 17:41:29,835 INFO  - Clicking on By.id: gb_70
+2015-12-15 17:41:30,011 INFO  - - - Ok! Element, found By.id: gb_70 clicked successfully
+2015-12-15 17:41:31,033 INFO  - Changing value in element found By.id: Email from '' to ''
+2015-12-15 17:41:31,190 INFO  - Changing value in element found By.id: Email from '' to 'zekov.roman78'
+2015-12-15 17:41:31,202 INFO  - Clicking on By.id: next
+2015-12-15 17:41:31,347 INFO  - - - Ok! Element, found By.id: next clicked successfully
+2015-12-15 17:41:31,366 ERROR - WebDriver error: Element not found By.id: Passwd
+2015-12-15 17:41:33,500 INFO  - Changing value in element found By.id: Passwd from '' to ''
+2015-12-15 17:41:33,647 INFO  - Changing value in element found By.id: Passwd from '' to 'Nthvbyfnjh'
+2015-12-15 17:41:33,676 INFO  - Clicking on By.id: signIn
+2015-12-15 17:41:34,412 INFO  - - - Ok! Element, found By.id: signIn clicked successfully
+2015-12-15 17:41:35,837 ERROR - WebDriver error: Element not found By.xpath: //a[@title='No thanks']
+2015-12-15 17:41:37,872 INFO  - Clicking on By.xpath: .//*[@id='gbwa']/div[1]/a
+2015-12-15 17:41:38,124 INFO  - - - Ok! Element, found By.xpath: .//*[@id='gbwa']/div[1]/a clicked successfully
+2015-12-15 17:41:38,259 INFO  - Clicking on By.id: ogbkddg:7
+2015-12-15 17:41:38,452 INFO  - - - Ok! Element, found By.id: ogbkddg:7 clicked successfully
+2015-12-15 17:41:45,991 INFO  - Clicking on By.xpath: //div[text()='??? ????']
+2015-12-15 17:41:46,138 INFO  - - - Ok! Element, found By.xpath: //div[text()='??? ????'] clicked successfully
+2015-12-15 17:41:46,243 INFO  - Clicking on By.xpath: //div[contains(text(), '????????? ?????')]/../../..
+2015-12-15 17:41:46,437 INFO  - - - Ok! Element, found By.xpath: //div[contains(text(), '????????? ?????')]/../../.. clicked successfully
+2015-12-15 17:42:17,879 INFO  - Navigating to:'https://www.google.com.ua/'
+2015-12-15 17:42:19,291 INFO  - Clicking on By.id: gb_70
+2015-12-15 17:42:19,622 INFO  - - - Ok! Element, found By.id: gb_70 clicked successfully
+2015-12-15 17:42:20,715 INFO  - Changing value in element found By.id: Email from '' to ''
+2015-12-15 17:42:20,864 INFO  - Changing value in element found By.id: Email from '' to 'zekov.roman78'
+2015-12-15 17:42:20,874 INFO  - Clicking on By.id: next
+2015-12-15 17:42:20,939 INFO  - - - Ok! Element, found By.id: next clicked successfully
+2015-12-15 17:42:20,957 ERROR - WebDriver error: Element not found By.id: Passwd
+2015-12-15 17:42:23,101 INFO  - Changing value in element found By.id: Passwd from '' to ''
+2015-12-15 17:42:23,250 INFO  - Changing value in element found By.id: Passwd from '' to 'Nthvbyfnjh'
+2015-12-15 17:42:23,313 INFO  - Clicking on By.id: signIn
+2015-12-15 17:42:24,081 INFO  - - - Ok! Element, found By.id: signIn clicked successfully
+2015-12-15 17:42:25,116 ERROR - WebDriver error: Element not found By.xpath: //a[@title='No thanks']
+2015-12-15 17:42:27,152 INFO  - Clicking on By.xpath: .//*[@id='gbwa']/div[1]/a
+2015-12-15 17:42:27,318 INFO  - - - Ok! Element, found By.xpath: .//*[@id='gbwa']/div[1]/a clicked successfully
+2015-12-15 17:42:27,530 INFO  - Clicking on By.id: ogbkddg:7
+2015-12-15 17:42:27,719 INFO  - - - Ok! Element, found By.id: ogbkddg:7 clicked successfully
+2015-12-15 17:42:34,937 INFO  - Clicking on By.xpath: //div[text()='??? ????']
+2015-12-15 17:42:35,068 INFO  - - - Ok! Element, found By.xpath: //div[text()='??? ????'] clicked successfully
+2015-12-15 17:42:35,171 INFO  - Clicking on By.xpath: //div[contains(text(), '????????? ?????')]/../../..
+2015-12-15 17:42:35,571 INFO  - - - Ok! Element, found By.xpath: //div[contains(text(), '????????? ?????')]/../../.. clicked successfully
