@@ -17,8 +17,8 @@ public class DrivePage {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 	
-    private Button myDrive = new Button(By.xpath("//div[text()='Мой диск']"));
-    private Button upload = new Button(By.xpath("//div[contains(text(), 'Загрузить файлы')]/.."));
+    private Button myDrive = new Button(By.xpath("//div[text()='РњРѕР№ РґРёСЃРє']"));
+    private Button upload = new Button(By.xpath("//div[contains(text(), 'Р—Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р»С‹')]/.."));
 
     public DrivePage openUpload(){
     	waitInSeconds(5);

@@ -27,6 +27,7 @@ public class InboxPage {
     private Button sendButton = new Button(By.xpath( Locators.SEND_EMAIL.getValue()) );
     private Button body = new Button(By.xpath( Locators.BODY.getValue() ));
     private Button delEmailButton = new Button(By.xpath( Locators.DELETE_EMAIL_BUTTON.getValue() ));
+    //   private Button delete = new Button(By.xpath("//div[@class='ar9 T-I-J3 J-J5-Ji']"));
 
     private TextInput receiverInput = new TextInput(By.xpath( Locators.RECEIVER_INPUT.getValue() ));
     private TextInput subjectInput = new TextInput(By.className( Locators.SUBJECT_INPUT.getValue() ));
